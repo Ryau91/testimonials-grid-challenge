@@ -16,7 +16,7 @@ body {
     background-color: #7541c8;
     color: #ffffff;
     position: relative;
-    z-index: 0;
+    z-index: -2;
 }
 
 #testimonial-2 {
@@ -41,10 +41,10 @@ body {
 
 .grid-item {
     margin: 15px;
-    padding: 35px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px 2px rgba(0,0,0,0.1);
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .header {
@@ -55,34 +55,37 @@ body {
 
 .header img {
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 15px;
     border: 2px solid #7541c8;
-    width: 40px;
+    width: 30px;
 }
 
 .name {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
 }
 
 .vergrad {
     opacity: 0.5;
+    font-size: 0.70rem;
 }
 
 .review {
     opacity: 70%;
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 h4 {
-    margin-bottom: 20px; 
-    font-size: 1.2rem;
+    margin-bottom: 25px; 
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
 #quote {
     position: absolute;
-    right: 10%;
+    right: 15%;
     top: 0;
-    z-index: 1;
+    z-index: -1;
 }
 @media (min-width: 576px) {
 
@@ -95,7 +98,7 @@ h4 {
 
     #testimonial-grid-container {
         display:flex;
-        max-width: 1440px;
+        max-width: 1280px;
         margin: 0 auto;
         justify-content: space-between;
     }
@@ -118,19 +121,11 @@ h4 {
         justify-content: space-between;
     }
 
-    #testimonial-1 {
-        flex-basis: 67%;
+    #testimonial-1, #testimonial-4 {
+        flex-basis: 69%;
     }
     
-    #testimonial-2 {
-        flex-basis: 33%;
-    }
-    
-    #testimonial-3 {
-        flex-basis: 33%;
-    }
-    
-    #testimonial-4 {
-        flex-basis: 67%;
+    #testimonial-2, #testimonial-3 {
+        flex-basis: 31%;
     }
 }
